@@ -1,9 +1,9 @@
 # webdev-07022022
-
-<!-- Referencias -->
 https://github.com/celsobastos/webdev-07022022
+<!-- Referencias -->
 https://www.w3.org/
 https://www.w3schools.com/tags/ref_language_codes.asp
+https://developer.mozilla.org/pt-BR/docs/Web/HTML
 - Road Map
     https://roadmap.sh/backend
 
@@ -12,7 +12,7 @@ https://www.w3schools.com/tags/ref_language_codes.asp
 Todos os carros seminovos na ImpactaCar com IPVA grátis
 Carros seminovos incríveis, com garantia de 2 anos e certificados de qualidade
 Descubra uma nova experiência de compra e venda de carros no Brasil.
-<Vender ou trocar seu carro>
+Vender ou trocar seu carro [link]
 
 ### Seção 2
 7 razões para comprar um carro na Impacta car
@@ -45,9 +45,9 @@ Descubra o valor do seu carro [button]
 ### Seção 2
 Três passos para vender seu carro
     1 Avalie em 2 minutos
-    Insira informações básicas do seu carro: ano, modelo e versão, cor e quilometragem aproximada.
+        Insira informações básicas do seu carro: ano, modelo e versão, cor e quilometragem aproximada.
     2 Escolha a melhor oferta $$$
-    Nossas ofertas são baseadas em diversas informações do mercado automotivo no Brasil.
+        Nossas ofertas são baseadas em diversas informações do mercado automotivo no Brasil.
     3 Agende uma inspeção gratuita
-    Inspecionamos até 240 itens do seu carro e te contamos tudo sobre o estado dele. A inspeção pode ser feita em sua casa, trabalho ou em nossas lojas.
+        Inspecionamos até 240 itens do seu carro e te contamos tudo sobre o estado dele. A inspeção pode ser feita em sua casa, trabalho ou em nossas lojas.
     Avalie seu carro [button] 
