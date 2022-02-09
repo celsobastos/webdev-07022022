@@ -7,7 +7,7 @@
   <body>
     <section>
       <h1>Formulário de Cadastro</h1>
-      <form action="login.html" method="POST">
+      <form action="login.html" method="get">
         <fieldset>
           <legend>Login</legend>
           <div>
@@ -48,11 +48,32 @@
             <div>Estado Civil</div>
             <div>
               <input type="radio" id="casado" name="estado-civil" value="casado" />
-              <label for="casado">Casado:</label>
+              <label for="casado">Casado</label>
             </div>
             <div>
               <input type="radio" id="solteiro" name="estado-civil" value="solteiro"/>
-              <label for="solteiro">Solteiro:</label>
+              <label for="solteiro">Solteiro</label>
+            </div>
+          </div>
+
+          <div>
+            <div>Cursos</div>
+            <div>
+              <input type="checkbox" id="mecanico" name="mecanico" value="mecanico" />
+              <label for="mecanico">Mecânico</label>
+            </div>
+            <div>
+              <input type="checkbox" id="engenheiro-eletrico" name="engenheiro-eletrico" value="eletrico"/>
+              <label for="engenheiro-eletrico">Engenheiro Eletrico</label>
+            </div>
+          </div>
+
+          <div>
+            <div><label for="estado">Estado:</label></div>
+            <div>
+              <select id="estado" name="estado">
+                <option> -- Selecione -- </option>
+              </select>
             </div>
           </div>
 
