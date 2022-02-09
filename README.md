@@ -1,11 +1,27 @@
 # webdev-07022022
 https://github.com/celsobastos/webdev-07022022
+- Road Map: https://roadmap.sh/backend
+
 <!-- Referencias -->
 https://www.w3.org/
 https://www.w3schools.com/tags/ref_language_codes.asp
 https://developer.mozilla.org/pt-BR/docs/Web/HTML
-- Road Map
-    https://roadmap.sh/backend
+
+
+## Instalar git no windows
+### Baixar projeto do git hub no windows
+- Instalar git-bash no windows [https://git-scm.com/downloads]
+- acessar o repositório do projeto que deseja baixar ex: [https://github.com/celsobastos/webdev-07022022], clicar no menu [code] e copiar a [url].
+- Ir no git-bash e digitar o comando: $ git clone [url]
+- Para baixar as alterações feitas use: $ git pull 
+
+## Instalar o git no Ubuntu
+- [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04-pt]
+- acessar o repositório do projeto que deseja baixar ex: [https://github.com/celsobastos/webdev-07022022], clicar no menu [code] e copiar a [url].
+- Ir no git-bash e digitar o comando: $ git clone [url]
+- Para baixar as alterações feitas use: $ git pull
+
+
 
 ## [Page] Home Page
 ### Seção 1
