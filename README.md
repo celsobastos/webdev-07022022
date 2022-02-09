@@ -15,12 +15,11 @@ https://caniuse.com/
 - Ir no git-bash e digitar o comando: $ git clone [url]
 - Para baixar as alterações feitas use: $ git pull 
 
-### Instalar o git no Ubuntu
+### Instalar o git no Linux
 - [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04-pt]
 - acessar o repositório do projeto que deseja baixar ex: [https://github.com/celsobastos/webdev-07022022], clicar no menu [code] e copiar a [url].
 - Ir no git-bash e digitar o comando: $ git clone [url]
 - Para baixar as alterações feitas use: $ git pull
-
 
 
 ## [Page] Home Page

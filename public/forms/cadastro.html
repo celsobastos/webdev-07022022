@@ -7,9 +7,43 @@
   <body>
     <section>
       <h1>Formulário de Cadastro</h1>
-      <form>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" />
+      <form action="login.html" method="POST">
+        <fieldset>
+          <legend>Login</legend>
+          <div>
+            <div><label for="email">Email:</label></div>
+            <div><input type="email" name="email" id="email" /></div>
+          </div>
+
+          <div>
+            <div><label for="senha">Senha:</label></div>
+            <div><input type="password" name="senha" id="senha" /></div>
+          </div>
+
+          <div>
+            <div><label for="confirmar-senha">Confirmar Senha:</label></div>
+            <div>
+              <input type="password" name="csenha" id="confirmar-senha" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div>
+            <div><label for="nome">Nome:</label></div>
+            <div><input type="text" name="nome" id="nome" /></div>
+          </div>
+
+          <div>
+            <div><label for="idade">idade:</label></div>
+            <div><input type="number" name="idade" id="idade" /></div>
+          </div>
+
+          <div>
+            <div><label for="endereco">Endereço:</label></div>
+            <div><input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" /></div>
+          </div>
+        </fieldset>
 
         <input type="submit" value="enviar" />
       </form>
