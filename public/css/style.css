@@ -1,8 +1,28 @@
+* {
+   box-sizing: border-box; 
+   margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+.container{
+    background-color: rgb(214, 40, 4);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    background-color: rgb(81, 9, 148);
+}
+
+
 body {
-    color: #60cd2c;
-    background: rgb(0, 39, 61);
+    /*color: #60cd2c;*/
+    /*background: rgb(0, 39, 61);*/
     /*font-family: 'Courier New', Courier, monospace;*/
-    font-family: 'Shizuru', cursive;
+    /*font-family: 'Shizuru', cursive;*/
 }
 
 /*
