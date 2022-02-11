@@ -1,4 +1,57 @@
-h1{
-    color: red;
-    background: black;
+body {
+    color: #60cd2c;
+    background: rgb(0, 39, 61);
+    /*font-family: 'Courier New', Courier, monospace;*/
+    font-family: 'Shizuru', cursive;
 }
+
+/*
+header a:link {
+    color: white;
+}
+
+header a:visited {
+    color: blue;
+}
+
+header:hover {
+    color: chartreuse;
+}
+
+header a:active {
+    color: rgb(255, 0, 234);
+}
+*/
+
+/*
+header > div > p{
+    color: blue;
+}
+/*
+/*
+h1.carros, p, h2 {
+    color:blueviolet;
+}
+*/
+
+/*
+h1 {
+    color: white;
+}
+
+
+h2.carros {
+    color:brown;
+}
+*/
+
+/* comentario */
+/*
+#sonho-realidade {
+    color:aqua
+}
+
+p {
+    color:blueviolet !important;
+}
+*/
