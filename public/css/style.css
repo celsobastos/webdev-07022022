@@ -1,77 +1,36 @@
-* {
-   box-sizing: border-box; 
-   margin: 0;
-}
-
 header {
-    background-color: rgba(0, 0, 0, 0.291);
+    background-color: rgb(0, 0, 0);
 }
-
 .container{
-    background-color: rgb(214, 40, 4);
-    width: 80%;
+    background-color: rgb(255, 0, 0);
+    width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
 }
 
-.logo {
-    background-color: rgb(81, 9, 148);
+ul li {
+    display: inline-block;
+    background-color: aqua;
+    border-radius: 5px;
 }
 
-
-body {
-    /*color: #60cd2c;*/
-    /*background: rgb(0, 39, 61);*/
-    /*font-family: 'Courier New', Courier, monospace;*/
-    /*font-family: 'Shizuru', cursive;*/
+ul li a {
+    display: block;
+    padding: 8px;
 }
 
-/*
-header a:link {
-    color: white;
-}
-
-header a:visited {
-    color: blue;
-}
-
-header:hover {
-    color: chartreuse;
-}
-
-header a:active {
-    color: rgb(255, 0, 234);
-}
-*/
-
-/*
-header > div > p{
-    color: blue;
-}
-/*
-/*
-h1.carros, p, h2 {
-    color:blueviolet;
-}
-*/
-
-/*
-h1 {
-    color: white;
+ul li a:hover {
+    background-color: rgb(3, 56, 56);
+    border-radius: 5px;
+    color:rgb(255, 255, 255)
 }
 
 
-h2.carros {
-    color:brown;
-}
-*/
 
-/* comentario */
-/*
-#sonho-realidade {
-    color:aqua
+body{
+    margin: 0;
 }
-
-p {
-    color:blueviolet !important;
-}
-*/
