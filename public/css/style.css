@@ -12,8 +12,9 @@ div.logo {
     color:rgb(0, 0, 230);
     text-shadow: 1px 1px 1px rgb(0, 0, 0), 2px -2px 2px red;
     font-size: 30px;
-
 }
+
+/* Header */
 header {
     background-color: rgba(0, 0, 0, 0.897);
     box-shadow: 0 2px 3px;
@@ -29,13 +30,11 @@ header {
 ul {
     list-style-type: none;
 }
-
 ul li {
     display: inline-block;
     /*background-color: rgba(0, 32, 32, 0.336);*/
     border-radius: 0px;
 }
-
 ul li a {
     display: block;
     padding: 15px;
@@ -43,7 +42,6 @@ ul li a {
     font-size: 20px;
     /*border-bottom: solid 2px #000 ;*/
 }
-
 ul li a:hover {
     /*background-color: rgba(0, 0, 0, 0.897);*/
     /*border-radius: 5px;*/
@@ -51,3 +49,48 @@ ul li a:hover {
     /*border-bottom: solid 2px rgb(0, 0, 0) ;*/
 }
 
+/* Main */
+main {
+    /*display: none;*/
+    background-image: url(../img/paris.jpg);
+    background-size: cover;
+    padding: 50px;
+    text-align: center; /* center, right, left */
+    color: #fff;
+    position: relative;
+}
+
+.transparent{
+    /*background: linear-gradient(to right top, rgba(13, 13, 197, 0.329) 20%, black, red)  ;*/
+    opacity: 1;
+    /* position: absolute;
+    right: 40px;
+    bottom: 0;
+    z-index: 1; */
+    width: 150px;
+    border: red solid 2px;
+    margin: 0 auto;
+    color: black;
+    /*max-height: auto;
+    overflow: auto;
+    */
+    transform: rotate(0deg);
+    transition-property: width color transform;
+    transition-duration: 300ms;
+    transition-delay: 0s;
+}
+
+.transparent:hover{
+    width: 300px;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.position {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /*z-index: 2;*/
+}
