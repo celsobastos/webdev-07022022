@@ -20,6 +20,7 @@ header {
     box-shadow: 0 2px 3px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 .container{
     width: 90%;
@@ -53,7 +54,8 @@ ul li a:hover {
 main {
     /*display: none;*/
     background-image: url(../img/paris.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     padding: 50px;
     text-align: center; /* center, right, left */
     color: #fff;
@@ -72,7 +74,7 @@ main {
     margin: 0 auto;
     color: black;
     /*max-height: auto;
-    overflow: auto;
+    overflow: auto; 
     */
     transform: rotate(0deg);
     transition-property: width color transform;
@@ -91,6 +93,48 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    width: 150px;
 
     /*z-index: 2;*/
 }
+
+/* Link */
+.menu2 {
+    background-color: aqua;
+    display: block;
+}
+
+.sub-menu{
+    background-color: brown;
+    display: none;
+}
+
+.sub-menu:hover {
+    display: block;
+}
+
+.menu2:hover ~ .sub-menu{
+    display: block;
+}
+
+/* Animação */
+
+.melo {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+@keyframes animacao {
+    from {
+      top:0;
+      left: 100px;  
+    }
+    to{
+      top: 0;
+      left: 500px;  
+    }
+}
+
