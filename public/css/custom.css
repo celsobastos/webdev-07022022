@@ -1,5 +1,5 @@
 * {
-    box-sizing: 0;
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -33,12 +33,10 @@ header div.bar {
 
 
 /* Card */
-
 .servicos .card {
     border: rgb(133, 133, 133) solid 1px;
     border-radius: 3px;
     background-color: rgb(199, 199, 199);
-    width: 200px;
 }
 
 .btn {
@@ -50,8 +48,14 @@ header div.bar {
     flex-wrap: wrap;
 }
 
+[class*="col"]{
+    width: 100%;
+}
+
+
+
 /* 100% / 12 = 8.33% * 2 = 16.66% */
-@media screen and(min-width: 576px){
+@media screen and (min-width: 576px){
     .col-small-1 { width: 8.33%;}
     .col-small-2 { width: 16.66%;}
     .col-small-3 { width: 25%;}
