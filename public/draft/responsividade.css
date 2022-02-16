@@ -1,0 +1,50 @@
+html{
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+/* Mobile First */
+.container {
+    background-color: aqua;
+    width: 100%;
+}
+
+.container ul {
+    display: block;
+}
+
+@media screen and (min-width: 992px){
+    .container ul {
+        display: flex;
+    }
+    .container{
+        background-color: blue;
+    }
+
+}
+
+/*
+section {
+    background-color: blue;
+    width: 500px;
+    margin-left: 0;
+}
+h1{
+    width: 50%; /* 250px * /
+    background-color: aqua;
+    font-size: 10vw; /* width * /
+    font-size: 10vh; /* height * /
+}
+
+p{
+    font-size: 2rem;
+}
+
+span {
+    /*font-weight: bold;* /
+    font-size: 0.5rem; /* 25px * /
+    /*font-size: 0.5em;*/ /* 15px * /
+}
+*/
