@@ -161,3 +161,22 @@ main .main {
     /* Support for IE. */
     font-feature-settings: 'liga';
   }
+
+  video {
+      width: 100%;
+      height: auto;
+  }
+  .icon-seta{
+      position: relative;
+      border: #000 solid 1px;
+  }
+
+  .icon-seta::after {
+    font-family: 'Material Icons';
+    content: "\e5c8";
+    color: rgb(5, 0, 70);
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
