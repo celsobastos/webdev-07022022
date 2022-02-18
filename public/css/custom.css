@@ -168,7 +168,6 @@ main .main {
   }
   .icon-seta{
       position: relative;
-      border: #000 solid 1px;
   }
 
   .icon-seta::after {
@@ -178,5 +177,19 @@ main .main {
     font-size: 20px;
     position: absolute;
     top: 0px;
-    right: 10px;
   }
+
+  .icon-seta:hover::after{
+    color: rgb(121, 0, 0); 
+    right: 15px;
+  }
+
+  .icon-seta a{
+      text-decoration: none;
+      color: rgb(32, 0, 173);
+  }
+
+  #navegacao {
+    background-color: #000;
+  }
+  

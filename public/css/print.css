@@ -1,0 +1,16 @@
+header,
+section.video,
+audio,
+button {
+    display: none;
+}
+
+@page{
+    margin-left: 3cm;
+}
+
+section.servicos{
+    page-break-before: always;
+}
+
+
