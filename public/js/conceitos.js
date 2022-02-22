@@ -31,17 +31,16 @@ for(let i = 0; i < aluno.length; i++){
     let media = (notaPrimeiroBimestre[i] + notaSegundoBimestre[i]) / 2;
     let mensagem;
     let nomeDoAluno = aluno[i];
-    if (media >= 7 && faltas === 0) {
-        mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está aprovada`;
-    }
-    else if (media > 3 && faltas === 0){
 
-        mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está de Recuperação`;
-    }
-    else{
-        mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está Reprovado(a)`;
-    }
-
+    // if (media >= 7 && faltas === 0) {
+    //     mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está aprovada`;
+    // }
+    // else if (media > 3 && faltas === 0){
+    //     mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está de Recuperação`;
+    // }
+    // else{
+    //     mensagem = `Olá ${nomeDoAluno} a media é: ${media} você está Reprovado(a)`;
+    // }
     console.log(mensagem);
 }
 
@@ -67,13 +66,6 @@ while (i <= 10) {
 
 
 
-
-
-
-
-
-
-
 /*
 let aceitoContrato = false;
 let nomeCompleto = "Jonas Almeida";
@@ -81,3 +73,18 @@ const COLOR_RED = '#ff0000';
 console.log(typeof aceitoContrato);
 console.log('Hello world');
 */
+
+let codigoProduto = 1;
+
+switch (codigoProduto){
+    case (1) :
+        console.log('Batata');
+    break;
+    
+    case 2: 
+        console.log('Feijão');
+    break;
+    
+    default:
+        console.log('Produto não encontrado');
+}

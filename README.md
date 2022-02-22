@@ -2,6 +2,9 @@
 https://github.com/celsobastos/webdev-07022022
 - Road Map: https://roadmap.sh/backend
 
+- Como reiniciar seus aplicativos Node.js automaticamente com o nodemon
+https://www.digitalocean.com/community/tutorials/workflow-nodemon-pt
+
 <!-- Bootstrap -->
 https://getbootstrap.com/
 
