@@ -1,11 +1,33 @@
 'use strict'
+/* operador NEW */
+let Pessoa = function(nome, sobreNome) {
+    this.nome = nome;
+    this.sobreNome = sobreNome;
+    this.fullName = function(){
+        console.log(`${this.nome} ${this.sobreNome}` );
+    }
+}
+
+let pessoa1 = new Pessoa('José','da Silva');
+let pessoa2 = new Pessoa('Pedro','Rodrigues');
+let data = new Date();
+console.log(
+    data.getHours() + ':' + 
+    data.getMinutes() + ':' + 
+    data.getSeconds()
+);
+
+pessoa1.fullName();
+pessoa2.fullName();
+
+
+
 /* Callback */
 function alerta(ola, mundo, msnola, msnmundo = 'Mundo') {
     ola(msnola);
     mundo(msnmundo);
 }
-
-alerta(msn => console.log(msn), msn => console.log(msn), 'Ola');
+//alerta(msn => console.log(msn), msn => console.log(msn), 'Ola');
 
 
 /*
