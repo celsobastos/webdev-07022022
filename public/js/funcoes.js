@@ -1,5 +1,14 @@
 'use strict'
+/* Callback */
+function alerta(ola, mundo, msnola, msnmundo = 'Mundo') {
+    ola(msnola);
+    mundo(msnmundo);
+}
 
+alerta(msn => console.log(msn), msn => console.log(msn), 'Ola');
+
+
+/*
 let lista = [1,2,3];
 
 let j = lista.lastIndexOf(1);
@@ -27,7 +36,7 @@ let Usuario = {
 console.log(Usuario.mensagem());
 
 let x = 1;
-
+*/
 
 
 // let Pessoas = {
