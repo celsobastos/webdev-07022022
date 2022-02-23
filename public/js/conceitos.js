@@ -77,7 +77,7 @@ console.log('Hello world');
 let codigoProduto = 1;
 
 switch (codigoProduto){
-    case (1) :
+    case 1:
         console.log('Batata');
     break;
     
