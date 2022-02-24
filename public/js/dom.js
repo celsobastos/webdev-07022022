@@ -1,6 +1,35 @@
 'use strict'
 
+let areaDeTexto = document.getElementById('txt');
+let divContar = document.querySelector('.contar'); 
+areaDeTexto.addEventListener('keypress', (event) => {
+    let contador = areaDeTexto.value.length;
+    divContar.innerHTML = contador;
+});
 
+
+let objectLi = document.querySelectorAll('li'); 
+let objectImage = document.querySelector('.img');
+
+//let image = document.getElementById('imagem');
+
+for(let i = 0; i < objectLi.length; i++){
+    
+    objectLi[i].addEventListener('mouseover', function (event) {
+        objectLi[i].classList.add('active');
+        objectImage.src = 'img/art.png';
+
+    });
+    objectLi[i].addEventListener('mouseout', function (event) {
+        objectLi[i].classList.remove('active');
+        objectImage.src = 'img/banana.svg';
+    })
+
+}
+
+
+
+/* event click */
 let botao = document.querySelector('.btn');
 botao.addEventListener('click', (event) => {
     let objNome = document.querySelector('.input-name');
