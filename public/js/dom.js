@@ -1,13 +1,25 @@
 'use strict'
 
+function saveStore() {
+    localStorage.setItem('email','testemail@gmail.com')
+}
+
+function getStore(){
+    return localStorage.getItem('email');
+}
+
+document.querySelector('.email').innerHTML = getStore();
+saveStore();
+
 let http = new XMLHttpRequest();
 http.onreadystatechange = function () {
     if( this.status == 200) {
-        console.log(this.responseText);
-        document.getElementById('txt').value = this.responseText;
+        //console.log(this.responseText);
+        let contersao = JSON.parse(this.responseText);
+        console.log(contersao.cep,contersao.logradouro);
     }
 }
-http.open('GET', 'content.txt', true);
+http.open('GET', 'https://viacep.com.br/ws/04849270/json/', true);
 http.send();
 
 
