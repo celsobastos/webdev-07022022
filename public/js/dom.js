@@ -1,14 +1,5 @@
 'use strict'
 
-/* Promise */
-
-let x = 'celso';
-x += 'Silva';
-
-
-
-let o = {};
-
 let fetchData = function (url) {
     fetch(url).then(function (resp) {
         return resp.json();
@@ -16,6 +7,7 @@ let fetchData = function (url) {
         data.map((dataArray) => {
             document.querySelector(".pessoas").innerHTML += '<br>' + dataArray.name;
         });
+        console.log(data);
         //document.querySelector(".pessoas").append(data[0].name);
     }).catch(function (error) {
         console.log('Algo deu errado');
@@ -23,7 +15,6 @@ let fetchData = function (url) {
 }
 
 fetchData('https://jsonplaceholder.typicode.com/users');
-
 
 
 function saveStore() {
