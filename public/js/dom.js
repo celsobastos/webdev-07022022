@@ -1,12 +1,32 @@
 'use strict'
 
-let areaDeTexto = document.getElementById('txt');
-let divContar = document.querySelector('.contar'); 
-areaDeTexto.addEventListener('keypress', (event) => {
-    let contador = areaDeTexto.value.length;
-    divContar.innerHTML = contador;
-});
+let http = new XMLHttpRequest();
+http.onreadystatechange = function () {
+    if( this.status == 200) {
+        console.log(this.responseText);
+        document.getElementById('txt').value = this.responseText;
+    }
+}
+http.open('GET', 'content.txt', true);
+http.send();
 
+
+
+/**
+ * Adicione comentarios que explica o que essa função esta fazendo
+ * @param {*} id O que esse parametro faz?
+ */
+function contadorDeCaracteres(id) {
+    let areaDeTexto = document.getElementById(id);
+    let divContar = document.querySelector('.contar'); 
+    areaDeTexto.addEventListener('keyup', (event) => {
+        let contador = areaDeTexto.value.length;
+        divContar.innerHTML = contador;
+    });
+}
+
+
+contadorDeCaracteres('txt');
 
 let objectLi = document.querySelectorAll('li'); 
 let objectImage = document.querySelector('.img');
@@ -16,12 +36,12 @@ let objectImage = document.querySelector('.img');
 for(let i = 0; i < objectLi.length; i++){
     
     objectLi[i].addEventListener('mouseover', function (event) {
-        objectLi[i].classList.add('active');
+        this.classList.add('active');
         objectImage.src = 'img/art.png';
 
     });
     objectLi[i].addEventListener('mouseout', function (event) {
-        objectLi[i].classList.remove('active');
+        this.classList.remove('active');
         objectImage.src = 'img/banana.svg';
     })
 
