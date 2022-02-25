@@ -1,5 +1,31 @@
 'use strict'
 
+/* Promise */
+
+let x = 'celso';
+x += 'Silva';
+
+
+
+let o = {};
+
+let fetchData = function (url) {
+    fetch(url).then(function (resp) {
+        return resp.json();
+    }).then(function (data){
+        data.map((dataArray) => {
+            document.querySelector(".pessoas").innerHTML += '<br>' + dataArray.name;
+        });
+        //document.querySelector(".pessoas").append(data[0].name);
+    }).catch(function (error) {
+        console.log('Algo deu errado');
+    });
+}
+
+fetchData('https://jsonplaceholder.typicode.com/users');
+
+
+
 function saveStore() {
     localStorage.setItem('email','testemail@gmail.com')
 }
@@ -11,17 +37,24 @@ function getStore(){
 document.querySelector('.email').innerHTML = getStore();
 saveStore();
 
-let http = new XMLHttpRequest();
-http.onreadystatechange = function () {
-    if( this.status == 200) {
-        //console.log(this.responseText);
-        let contersao = JSON.parse(this.responseText);
-        console.log(contersao.cep,contersao.logradouro);
+function getCep(cep){
+    let http = new XMLHttpRequest();
+    http.onreadystatechange = function () {
+        if( this.status == 200) {
+            //console.log(this.responseText);
+            let endereco = JSON.parse(this.responseText);
+            document.querySelector('.input-name').value = endereco.cep;
+        }
     }
+    http.open('GET', `https://viacep.com.br/ws/${cep}/json/`, true);
+    http.send();
 }
-http.open('GET', 'https://viacep.com.br/ws/04849270/json/', true);
-http.send();
+let botaoBuscaCep = document.querySelector('.busca-cep');
 
+botaoBuscaCep.addEventListener('click', function (event) {
+    getCep('04849-270');
+    event.preventDefault();
+})
 
 
 /**

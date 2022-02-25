@@ -13,7 +13,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/public/js/fetch.js"
+            "program": "${workspaceFolder}/public/js/dom.js"
         }
     ]
 }
