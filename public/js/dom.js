@@ -1,6 +1,32 @@
 'use strict'
 /* promise */
 
+let buscaUber = fetch('http://www.ubber.com'); // API Uber
+let busca99 = fetch('http://www.99.com'); // API 99
+
+let promise = new Promise.race([buscaUber,busca99]);
+
+let promise = new Promise((resolve, reject) => {
+
+    let login = 'usuariotest.com';
+    // let regx = RegExp('[A-Za-z]','i')
+    // login.test(regx);
+
+    if(login.indexOf('@') == -1){
+        return reject('Email invalido');
+    }
+    else {
+        return resolve('Sucesso!');
+    }
+
+});
+
+promise.then((mensagem) => {
+    console.log(mensagem);
+}).catch((error) => {
+    console.log(error);
+});
+
 
 
 
@@ -25,7 +51,7 @@ let fetchData = function (url) {
         chamada1();
         //document.querySelector(".pessoas").append(data[0].name);
     }).catch(function (error) {
-        console.log('Algo deu errado');
+        console.log(error + 'Algo deu errado');
     });
 }
 
