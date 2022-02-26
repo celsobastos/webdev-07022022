@@ -1,4 +1,18 @@
 'use strict'
+/* promise */
+
+
+
+
+
+
+function chamada1(){
+    console.log('chamada1');
+}
+
+function chamada2(){
+    console.log('chamada2');
+}
 
 let fetchData = function (url) {
     fetch(url).then(function (resp) {
@@ -7,7 +21,8 @@ let fetchData = function (url) {
         data.map((dataArray) => {
             document.querySelector(".pessoas").innerHTML += '<br>' + dataArray.name;
         });
-        console.log(data);
+        console.log('promise');
+        chamada1();
         //document.querySelector(".pessoas").append(data[0].name);
     }).catch(function (error) {
         console.log('Algo deu errado');
@@ -15,6 +30,9 @@ let fetchData = function (url) {
 }
 
 fetchData('https://jsonplaceholder.typicode.com/users');
+
+chamada2();
+
 
 
 function saveStore() {
