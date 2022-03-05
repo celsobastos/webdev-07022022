@@ -1,76 +1,71 @@
 'use strict'
 /* promise */
+// let buscaUber = fetch('http://www.ubber.com'); // API Uber
+// let busca99 = fetch('http://www.99.com'); // API 99
 
-let buscaUber = fetch('http://www.ubber.com'); // API Uber
-let busca99 = fetch('http://www.99.com'); // API 99
+// let promise = new Promise.race([buscaUber,busca99]);
 
-let promise = new Promise.race([buscaUber,busca99]);
+// let promise = new Promise((resolve, reject) => {
 
-let promise = new Promise((resolve, reject) => {
+//     let login = 'usuariotest.com';
+//     // let regx = RegExp('[A-Za-z]','i')
+//     // login.test(regx);
 
-    let login = 'usuariotest.com';
-    // let regx = RegExp('[A-Za-z]','i')
-    // login.test(regx);
+//     if(login.indexOf('@') == -1){
+//         return reject('Email invalido');
+//     }
+//     else {
+//         return resolve('Sucesso!');
+//     }
 
-    if(login.indexOf('@') == -1){
-        return reject('Email invalido');
-    }
-    else {
-        return resolve('Sucesso!');
-    }
+// });
 
-});
-
-promise.then((mensagem) => {
-    console.log(mensagem);
-}).catch((error) => {
-    console.log(error);
-});
-
+// promise.then((mensagem) => {
+//     console.log(mensagem);
+// }).catch((error) => {
+//     console.log(error);
+// });
 
 
+// function chamada1(){
+//     console.log('chamada1');
+// }
 
+// function chamada2(){
+//     console.log('chamada2');
+// }
 
+// let fetchData = function (url) {
+//     fetch(url).then(function (resp) {
+//         return resp.json();
+//     }).then(function (data){
+//         data.map((dataArray) => {
+//             document.querySelector(".pessoas").innerHTML += '<br>' + dataArray.name;
+//         });
+//         console.log('promise');
+//         chamada1();
+//         //document.querySelector(".pessoas").append(data[0].name);
+//     }).catch(function (error) {
+//         console.log(error + 'Algo deu errado');
+//     });
+// }
 
-function chamada1(){
-    console.log('chamada1');
-}
+// fetchData('https://jsonplaceholder.typicode.com/users');
 
-function chamada2(){
-    console.log('chamada2');
-}
-
-let fetchData = function (url) {
-    fetch(url).then(function (resp) {
-        return resp.json();
-    }).then(function (data){
-        data.map((dataArray) => {
-            document.querySelector(".pessoas").innerHTML += '<br>' + dataArray.name;
-        });
-        console.log('promise');
-        chamada1();
-        //document.querySelector(".pessoas").append(data[0].name);
-    }).catch(function (error) {
-        console.log(error + 'Algo deu errado');
-    });
-}
-
-fetchData('https://jsonplaceholder.typicode.com/users');
-
-chamada2();
+// chamada2();
 
 
 
-function saveStore() {
-    localStorage.setItem('email','testemail@gmail.com')
-}
+// function saveStore() {
+//     localStorage.setItem('email','testemail@gmail.com')
+// }
 
-function getStore(){
-    return localStorage.getItem('email');
-}
+// function getStore(){
+//     return localStorage.getItem('email');
+// }
 
-document.querySelector('.email').innerHTML = getStore();
-saveStore();
+// document.querySelector('.email').innerHTML = getStore();
+// saveStore();
 
 function getCep(cep){
     let http = new XMLHttpRequest();
@@ -126,8 +121,6 @@ for(let i = 0; i < objectLi.length; i++){
     })
 
 }
-
-
 
 /* event click */
 let botao = document.querySelector('.btn');

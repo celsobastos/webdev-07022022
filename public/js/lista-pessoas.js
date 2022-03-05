@@ -1,5 +1,7 @@
 console.log(Pessoas);
-let div = document.querySelector('.lista-pessoas');
+let div = 
+document.querySelector('.lista-pessoas');
+$('.lista-pessoas');
 
 let pessoas = Pessoas;
 let lista = pessoas.lista;
