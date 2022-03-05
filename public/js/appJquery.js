@@ -1,5 +1,28 @@
 $(document).ready(function(){
 
+    /** Ajax */
+    // $( ".ajax" ).click(function() {
+    //     $( "#apply-jquery" ).load( "test-ajax.html" );
+    // });
+
+    let btnEnviar = $("#enviar");
+    btnEnviar.click(function(){
+        let login = $('#login').val();
+        $.ajax({
+            method: "GET",
+            url: "https://viacep.com.br/ws/04849-270/json/",
+            data: { userlogin: login}
+        })
+        .done(function( msg ) {
+            console.log(msg);
+            $("#apply-jquery").html(msg);
+        });
+    });
+    
+
+    
+
+
     let div = $('#apply-jquery');
 
     /*
